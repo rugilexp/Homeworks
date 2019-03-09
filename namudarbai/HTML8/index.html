@@ -3,12 +3,59 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tekstas | HTML8</title>
+    <title>Forma | HTML8</title>
+    <meta name="keywords" content="forma, apklausa"/>
+    <meta name="description" content="Pirmoji apklausa"/>
+    <meta name="author" content="Rugilė Voverytė"/>
+    <style>
+        input[type=text]{
+            width: 170px;
+            margin: 0 0 3px;
+            text-align:right;
+        }
+    </style>
 </head>
 <body>
-    <h1>HTML elementai</h1>
-    <p>&lt;p&gt; - nurodo paragrafą</p>
-    <p>&lt;br&gt; - perkelia į naują eilutę</p>
-    <p>&lt;hr&gt; - įterpia horizontalią eilutę</p>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Jūsų informacija</legend>
+                    Vardas:
+                        <input type="text" name=Vardas ><br>
+                    Pavardė:
+                        <input type="text" name=Pavardė>
+            </fieldset>
+        </form>
+    </div>
+
+    <div>
+        <form>
+            <fieldset>
+                <legend>Klausimai</legend>
+                    Kaip sužinojot apie mus?
+                        <select>
+                            <option value="Google">Google</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Instagram">Instagram</option><br><br>
+                        </select><br><br>
+                    Ar apsilankysite vėl?<br>
+                        Taip <input type="radio" name=Apsilankymai>
+                        Ne   <input type="radio" name=Apsilankymai>
+                        Gal  <input type="radio" name=Apsilankymai><br><br>
+                        Ką manote apie kursą?<br>
+                            <textarea rows="4" cols="50" name="Komentaras" placeholder="Rašykite viską ką galvojate"></textarea><br><br>
+                    Pažymėkite programavimo/žymėjimo kalbas su kuriomis esate susipažinę:<br>
+                        <input type="checkbox" name=Pažymėti value="C#">C#
+                        <input type="checkbox" name=Pažymėti value="JAVA">JAVA
+                        <input type="checkbox" name=Pažymėti value="PHP">PHP<br>
+                        <input type="checkbox" name=Pažymėti value="HTML">HTML
+                        <input type="checkbox" name=Pažymėti value="CSS">CSS
+                        <input type="checkbox" name=Pažymėti value="JavaScript">JavaScript<br>
+                        <input type="checkbox" name=Pažymėti value="Python">Python
+                        <input type="checkbox" name=Pažymėti value="Ruby">Ruby<br><br>
+                        <input type="submit" value="Siųsti"><br>
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>
