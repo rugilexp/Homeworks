@@ -1,0 +1,14 @@
+    h1, h2 {
+        color:deeppink;
+    }
+    p.p1 {
+
+        font-family: "Times New Roman";
+    }
+    p.p2 {
+        font-family: "Arial";
+        color: darkgray;
+    }
+    span.pasviras {
+        font-style: italic;
+    }
