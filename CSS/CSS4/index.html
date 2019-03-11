@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klaviatūros | CSS4</title>
+    <style>
+        form {
+            width: 840px;
+            border-style:double;
+        }
+        fieldset {
+            border: none;
+            text-align: center !important;
+        }
+        ul li {
+            display:inline;
+        }
+        .line1 {
+            border-top: 3px solid black;
+            flex-grow: 1;
+            margin: 18px 108px;
+        }
+        .line2 {
+            border-top: 1px solid black;
+            flex-grow: 1;
+            margin: 18px 108px;
+        }
+        div.text {
+            font-style:oblique;
+            letter-spacing: 3px;
+            margin-top: 10px;
+        }
+        div.meniu {
+            word-break:normal;
+            display: inline;
+            letter-spacing: 1px;
+            margin:auto;
+            font-family: "Calibri";
+            font-weight: bold;
+        }
+        li {
+            margin-left: -10px;
+            margin-right: 20px;
+        }
+        a {
+            text-decoration:none;
+        }
+        a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+            <fieldset>
+                <div>
+                    <img src="images/logo.gif" alt="Logotipas" title="Logotipas">
+                </div>
+                <div class="line1"></div>
+                <div class="meniu">
+                    <ul>
+                        <li><a href="#">PAGRINDINIS</a></li>
+                        <li><a href="#">PARDAVIMAS</a></li>
+                        <li><a href="#">REMONTAS</a></li>
+                        <li><a href="#">APIE</a></li>
+                        <li><a href="#">KONTAKTAI</a></li>
+                    </ul>
+                </div>
+                <div class="line2"></div>
+                <div><img src="images/keys.jpg" alt="Klaviatūros" title="Klaviatūros">
+                <div class="text">
+                    <p>Mes specializuojamės klasikinių klaviatūrų, ypač "Fender<br>Rhodes", Wurlitzer EP200 ir Hohner Clainet, pardavimu ir<br>taisymu.</p>
+                </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
