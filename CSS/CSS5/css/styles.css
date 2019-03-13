@@ -1,0 +1,32 @@
+input[type="button"]
+{
+    background-color:black;
+    color: white;
+    border: inset black 3px;
+    width:100%;
+}
+td.ekranoTekstas {
+    text-align: center;
+    font-family: 'comic sans ms', sans-serif;
+}
+div {
+    width: 135px;
+    height: 150px;
+    background-color:white;
+    position: relative;
+    -webkit-animation: judesys 5s linear 2s;
+    box-shadow: 10px -5px 30px 10px;
+    background: url(https://fotw.info/images/l/lt.gif) left center;  color: black;
+}
+@-webkit-keyframes judesys {
+    {left:0px; top:0px;}
+    {left:200px; top:300px;}
+    {left:400px; top:0px;}
+    {left:0px; top:0px;}
+}
+@keyframes judesys {
+    0%   {background-color:yellow; left:0px; top:0px;}
+    40%  {background-color:blue; left:200px; top:300px;}
+    80%  {background-color:yellow; left:400px; top:0px;}
+    100% {background-color:blue; left:0px; top:0px;}
+}
