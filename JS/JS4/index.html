@@ -1,0 +1,30 @@
+<!--Parašykite funkciją, kuri grąžina dviejų skaičių dalybos rezultatą. Pirmasis skaičius yra dalinamas iš antro. Funkcija grąžina tik dalybos rezultatą. Iškvieskite funkciją su mygtuko paspaudimo variantu (pvz cia). Atvaizduokite funkcijos rezultatą su alert() ir console.log().-->
+
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalyba | JS4</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    function dalyba(){
+        var pirmasSkaicius;
+        pirmasSkaicius = prompt("Įveskite pirmąjį skaičių");
+        var antrasSkaicius;
+        antrasSkaicius = prompt("Įveskite antrąjį skaičių");
+        var rezultatas = pirmasSkaicius/antrasSkaicius;
+        alert("Dalybos rezultatas: " + pirmasSkaicius + " / " + antrasSkaicius + " = " + rezultatas);
+    }
+
+</script>
+
+ <form>
+    <input type="button" value="Kviesti dalybos funkciją"; onClick="dalyba();" />
+</form>
+
+</body>
+</html>
