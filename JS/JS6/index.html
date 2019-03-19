@@ -1,0 +1,27 @@
+<!--Parašykite funkciją, kuri patikrina jūsų įvestą amžių. Jeigu jūsų amžius yra 18 ir daugiau, tada rodomas pranešimas, kad jūs galite užeiti į svetainę, priešingu atveju, rodomas pranešimas, kad į svetainę užeiti negalite.-->
+
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amžiaus cenzas | JS6</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    function amzius(){
+        var vartotojoAmzius;
+        vartotojoAmzius = prompt("Įveskite savo amžių");
+        if (vartotojoAmzius>=18){
+            alert("Sveiki prisijungę!!!");
+        }else{
+            alert("Prisijungti negalite, nes esate nepilnametis!!!");
+        }
+    }
+    amzius();
+</script>
+
+</body>
+</html>
