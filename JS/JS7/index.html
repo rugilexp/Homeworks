@@ -1,0 +1,29 @@
+<!--Parašykite funkciją, kuri išspausdintų skaičius nuo 0 iki 100 ir tik lyginius (pvz. 2, 4, 6 ir t.t.)
+SUfleris - naudojant "Division Remainder".-->
+
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyginiai skaičiai | JS7</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    function lyginiaiSkaiciai(){
+        var  skaicius=1;
+        for(x=1; x<=100; x++){
+            if (skaicius%2==0){
+            document.write(skaicius + "<br />");
+            }
+            skaicius++;
+        }
+    }
+    lyginiaiSkaiciai();
+
+</script>
+
+</body>
+</html>
