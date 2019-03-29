@@ -1,3 +1,14 @@
+    <?php
+        function plotas($aukstis, $plotis) {
+        $staciakampio_plotas = $aukstis * $plotis;
+        echo "Stačiakampio plotas: $staciakampio_plotas m2";
+        }
+
+       if(isset($_POST['submit']) && $_POST['aukstis'] && $_POST['plotis']) {
+           plotas($_POST['aukstis'], $_POST['plotis']);
+           exit();
+       } //else echo "Neįvesti duomenys";
+    ?>
 <!DOCTYPE html>
 <html lang="lt">
 <head>
@@ -6,22 +17,17 @@
     <title>Ploto skaičiuoklė | PHP 11</title>
 </head>
 <body>
-    <form action="<?php $_PHP_SELF; ?>" method="post">
-        <input type="hidden" name="action" value="submit">
+    <?php
+        $submitClicked = false;
+        if($submitClicked == false)
+        { ?>
+        <form action="<?php $_PHP_SELF; ?>" method="post">
         Stačiakampio aukštis: <input type="number" name="aukstis" />
         Stačiakampio plotis: <input type="number" name="plotis" />
         <input type="submit" name="submit" value="Skaiciuoti" />
-    </form>
-
+        </form>
     <?php
-        function plotas($aukstis, $plotis) {
-        $staciakampio_plotas = $aukstis * $plotis;
-        echo "Stačiakampio plotas: $staciakampio_plotas m2";
-        }
-
-       if(isset($_POST['submit']) && $_REQUEST['aukstis'] && $_REQUEST['plotis']) {
-           plotas($_REQUEST['aukstis'], $_REQUEST['plotis']);
-       } else echo "Neįvesti duomenys";
+        };
     ?>
 </body>
 </html>
