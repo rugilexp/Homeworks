@@ -1,20 +1,28 @@
-<?php
-$action=$_REQUEST['action'];
-if ($action=="") /** display the contact form */
-{
-?>
-<form action="" method="POST" enctype="multipart/form-data">
-<input type="hidden" name="action" value="submit">
-Your name:<br>
-<input name="name" type="text" value="" size="30"/><br>
-Your email:<br>
-<input name="email" type="text" value="" size="30"/><br>
-Your message:<br>
-<textarea name="message" rows="7" cols="30"></textarea><br>
-<input type="submit" value="Send email"/>
-</form>
-<?php
-
-}
-
-?>
+    <?php
+        if(isset($_POST['submit']) && $_POST['vardas'] && $_POST['pavarde']) {
+        echo $_POST['vardas'] . ' ' . $_POST['pavarde'];
+        exit();
+       }
+    ?>
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VardasPavarde | PHP 12</title>
+</head>
+<body>
+    <?php
+        $submitClicked = false;
+        if($submitClicked == false)
+        { ?>
+        <form action="<?php $_PHP_SELF; ?>" method="post">
+        Jūsų vardas: <input type="text" name="vardas" />
+        Jūsų pavardė: <input type="text" name="pavarde" />
+        <input type="submit" name="submit" value="Pateikti" />
+        </form>
+    <?php
+        };
+    ?>
+</body>
+</html>
