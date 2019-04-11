@@ -1,3 +1,4 @@
+<!--Jungimasis prie admino duomenų db-->
 <?php
     $dbServer = "localhost";
     $dbUsername = "root";

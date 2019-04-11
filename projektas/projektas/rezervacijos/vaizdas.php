@@ -1,7 +1,8 @@
+<!--Prisijungusio administratoriaus langas-->
 <!DOCTYPE html>
 <html lang="lt">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf8">
     <link href="../css/style.css" rel="stylesheet" type="text/css">
     <title>Rezervacijų DB</title>
 </head>
@@ -11,6 +12,7 @@
                 <input type="button" value="Grįžti!" onclick="history.back()">
             </form>
             <h3>Sodybos užsakymai:</h3>
+            <td></td>
                 <table style width:100% >
                     <tr>
                         <th><?php echo "Vardas:"; ?> </th>
@@ -24,7 +26,7 @@
                         <td><?= $uzsakovas->vardas; ?></td>
                         <td><?= $uzsakovas->telefonas; ?></td>
                         <td><?= $uzsakovas->pastas; ?></td>
-                        <td> <?= $uzsakovas->rezervacijos_data; ?></td>
+                        <td><?= $uzsakovas->rezervacijos_data; ?></td>
                         <td><?= $uzsakovas->zinute; ?></td>
                     </tr>
                     <?php endforeach; ?>

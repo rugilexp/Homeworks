@@ -1,3 +1,4 @@
+<!--Admino prisijungimo tikrinimas-->
 <?php
     session_start();
     if(isset($_POST['submit'])) {
@@ -24,4 +25,4 @@
     } else {
             header("Location: ../index.php?=login=error3");
             exit();
-        }
+    }

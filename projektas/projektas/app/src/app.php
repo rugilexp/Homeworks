@@ -1,5 +1,5 @@
+<!--Rezervacijos formos įrašų priskyrimas kintamiesiems-->
 <?php
-
     if(isset($_POST['submit'])){
     $vardas = trim($_POST['vardas']);
     $telefonas = trim($_POST['telefonas']);
@@ -14,7 +14,7 @@
             $subject = "Nauja žinutė";
             $autorius = 'Nuo: ' . $vardas . ', ' . $pastas;
             $zinute = htmlspecialchars($zinute);
-            mail($to, $subject, $autorius, $zinute, $from);
+//            mail($to, $subject, $autorius, $zinute, $from);
             echo "<script>alert('Dėkojame. Jūsų žinutė gauta. Netrukus susisieksime.');</script>";
         }
     }

@@ -1,3 +1,4 @@
+<!--Rezervacijos formoje suvestų duomenų įrašymas į DB-->
 <?php
     define("DB_SERVER", "localhost");
     define("DB_USER", "root");
@@ -10,10 +11,5 @@
         echo 'Klaida: ' . $mysqli->connect_error . '\n';
         exit();
     }
-//$sql = "SELECT * FROM klientai";
-//$result = $mysqli->query($sql);
-//$array = $result->fetch_assoc();
-//var_dump($array);
-
-   mysqli_query($mysqli, "INSERT INTO rezervacija (vardas, telefonas, pastas, rezervacijos_data, zinute)
-   VALUES('$_POST[vardas]', '$_POST[telefonas]', '$_POST[pastas]', '$_POST[rezervacijos_data]', '$_POST[zinute]')");
+    mysqli_query($mysqli, "INSERT INTO rezervacija (vardas, telefonas, pastas, rezervacijos_data, zinute)
+    VALUES('$_POST[vardas]', '$_POST[telefonas]', '$_POST[pastas]', '$_POST[rezervacijos_data]', '$_POST[zinute]')");

@@ -1,3 +1,4 @@
+<!--Rezervacijos įvesties kintamieji-->
 <?php
     class rezervacija{
         public $vardas;
